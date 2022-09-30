@@ -9850,19 +9850,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\timmy\\.nuget\\packages\\": {}
+    "C:\\Users\\super\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\SchoolDeveleopment\\Comp4976-Microsoft\\Comp4976-Microsoft.csproj",
+      "projectUniqueName": "C:\\Users\\super\\dotnet\\Comp4976-Assignment-1\\Comp4976-Microsoft.csproj",
       "projectName": "Comp4976-Microsoft",
-      "projectPath": "C:\\SchoolDeveleopment\\Comp4976-Microsoft\\Comp4976-Microsoft.csproj",
-      "packagesPath": "C:\\Users\\timmy\\.nuget\\packages\\",
-      "outputPath": "C:\\SchoolDeveleopment\\Comp4976-Microsoft\\obj\\",
+      "projectPath": "C:\\Users\\super\\dotnet\\Comp4976-Assignment-1\\Comp4976-Microsoft.csproj",
+      "packagesPath": "C:\\Users\\super\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\super\\dotnet\\Comp4976-Assignment-1\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\timmy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\super\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -9870,6 +9875,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

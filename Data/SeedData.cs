@@ -5,19 +5,19 @@ namespace Data;
 
 public static class SeedData
 {
-    public static void Seed(this ModelBuilder modelBuilder)
-    {
-        modelBuilder.Entity<User>().HasData(
-            GetUsers()
-        );
-        modelBuilder.Entity<Resolution>().HasData(
-            GetResolutions()
-        );
-    }
+  public static void Seed(this ModelBuilder modelBuilder)
+  {
+    modelBuilder.Entity<User>().HasData(
+        GetUsers()
+    );
+    modelBuilder.Entity<Resolution>().HasData(
+        GetResolutions()
+    );
+  }
 
-    public static List<User> GetUsers()
-    {
-        List<User> UserList = new List<User>(){
+  public static List<User> GetUsers()
+  {
+    List<User> UserList = new List<User>(){
             new User(){
                 UserId = 0,
                 Role = User.UserRole.Admin,
@@ -52,26 +52,26 @@ public static class SeedData
             },
         };
 
-        return UserList;
-    }
+    return UserList;
+  }
 
-    public static List<Resolution> GetResolutions()
-    {
+  public static List<Resolution> GetResolutions()
+  {
 
-        List<Resolution> resolutionList = new List<Resolution>(){
+    List<Resolution> resolutionList = new List<Resolution>(){
 
             new Resolution(){
                 ResolutionId = "1",
                 CreationDate = "2021-01-01",
                 Abstract = "Resolution 1",
-                resolutionStatus = Resolution.Status.accpeted,
+                Status = Resolution.ResolutionStatus.accpeted,
                 UserId = 1
             },
             new Resolution(){
                 ResolutionId = "2",
                 CreationDate = "2021-01-01",
                 Abstract = "Resolution 2",
-                resolutionStatus = Resolution.Status.rejected,
+                Status = Resolution.ResolutionStatus.rejected,
                 UserId = 2
             },
 
@@ -79,7 +79,7 @@ public static class SeedData
                 ResolutionId = "3",
                 CreationDate = "2021-01-01",
                 Abstract = "Resolution 3",
-                resolutionStatus = Resolution.Status.draft,
+                Status = Resolution.ResolutionStatus.draft,
                 UserId = 3
             },
 
@@ -87,11 +87,11 @@ public static class SeedData
                 ResolutionId = "4",
                 CreationDate = "2021-01-01",
                 Abstract = "Resolution 4",
-                resolutionStatus = Resolution.Status.incomplete,
+                Status = Resolution.ResolutionStatus.incomplete,
                 UserId = 4
             },
             };
-        return resolutionList;
+    return resolutionList;
 
-    }
+  }
 }

@@ -11,22 +11,22 @@ namespace Models;
 public class Resolution
 {
 
-    enum Status
-    {
-        draft,
-        accpeted,
-        rejected,
-        incomplete
-    }
+  public enum ResolutionStatus
+  {
+    draft,
+    accpeted,
+    rejected,
+    incomplete
+  }
 
 
-    [Key]
-    public string? ResolutionId { get; set; }
-    public string? CreationDate { get; set; }
-    public string? Abstract { get; set; }
-    public string? Status { get; set; }
+  [Key]
+  public string? ResolutionId { get; set; }
+  public string? CreationDate { get; set; }
+  public string? Abstract { get; set; }
+  public ResolutionStatus? Status { get; set; }
 
-    public int UserId { get; set; }
-    [ForeignKey("UserId")]
-    public List<User>? Participants { get; set; }
+  public int UserId { get; set; }
+  [ForeignKey("UserId")]
+  public List<User>? Participants { get; set; }
 }
